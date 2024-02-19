@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="Search"
+            placeholder="Enter a city..."
+            id="search-form-input"
+            class="search-form-input"
+            required
+          />
+
+          <input type="Submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span> ,
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity">66%</strong>, wind
+              <strong id="wind-speed">3.13km/h</strong>
+            </p>
+          </div>
+
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon" id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        Coded by
+        <a href="https://github.com/Dimakatso1997/" target="_blank">
+          Dimakatso Tlhako</a
+        >, code hosted on
+        <a
+          href="https://github.com/Dimakatso1997/weather-project-app"
+          target="_blank"
+          >GitHub</a
+        >
+        and website hosted
+        <a href="https://weatherappbydee.netlify.app" target="_blank"
+          >on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
